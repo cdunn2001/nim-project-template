@@ -22,6 +22,7 @@ script:
     #- nim c --cc:$CC --verbosity:0 -r MYFILE.nim
     # Optional: build docs.
     #- nim doc --docSeeSrcUrl:https://github.com/AUTHOR/MYPROJECT/blob/master --project MYFILE.nim
+    - du -sh *
     - make hi
     - nim -h
 cache:
