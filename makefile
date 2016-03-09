@@ -11,7 +11,7 @@ nim:
 	cd nim; git clone -b ${BRANCH} --depth 1 git://github.com/nim-lang/csources csources/
 
 nim/bin/nim: | nim
-	cd nim/csources; sh build.sh; cd ..; rm -rf csources; bin/nim c koch; ./koch boot -d:release
+	cd nim/csources; sh build.sh; cd ..; bin/nim c koch; ./koch boot -d:release
 
 hi:
 	echo hi

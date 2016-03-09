@@ -14,7 +14,7 @@ matrix:
     - env: BRANCH=devel
   fast_finish: true
 install:
-  - make -j
+  - make bin/nim
 before_script:
     - export PATH="bin${PATH:+:$PATH}"
 script:
