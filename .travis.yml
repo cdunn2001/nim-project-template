@@ -16,7 +16,7 @@ matrix:
 install:
   - make -j
 before_script:
-    - export PATH="${PATH:+:$PATH}"
+    - export PATH="bin${PATH:+:$PATH}"
 script:
     # Replace uppercase strings!
     #- nim c --cc:$CC --verbosity:0 -r MYFILE.nim
